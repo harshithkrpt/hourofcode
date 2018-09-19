@@ -35,9 +35,7 @@ class ScrollDialog extends React.Component {
           <DialogTitle id="scroll-dialog-title">
             {this.props.heading}
           </DialogTitle>
-          <DialogContent>
-            <DialogContentText>{this.props.component}</DialogContentText>
-          </DialogContent>
+          <DialogContent>{this.props.component}</DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
               Close

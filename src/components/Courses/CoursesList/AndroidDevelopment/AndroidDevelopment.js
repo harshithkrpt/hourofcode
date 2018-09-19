@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Youtube from "../../../UI/Youtube/Youtube";
 import Margin from "../../../UI/Margin/Margin";
 import GettingStarted from "./Topics/GettingStarted";
-import Prerequisites from "./Topics/Prerequisites";
+
 import InstallAndroidStudio from "./Topics/InstallingAndroidStudio";
 
 import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
@@ -93,9 +93,10 @@ class AndroidDevelopment extends Component {
               heading={"Getting Started"}
               component={<GettingStarted />}
             />
+
             <ExpansionPanel
-              heading={"Prerequisites"}
-              component={<Prerequisites />}
+              heading={"Installing Android Studio"}
+              component={<InstallAndroidStudio />}
             />
           </div>
           <div style={{ marginTop: "30px" }} />

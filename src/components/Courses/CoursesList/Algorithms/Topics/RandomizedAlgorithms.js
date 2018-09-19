@@ -9,8 +9,6 @@ import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
 
-import Dimensions from "react-dimensions";
-
 export const VideoComponent = props => {
   return (
     <div>
@@ -88,4 +86,4 @@ const RandomizedAlgorithms = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(RandomizedAlgorithms));
+export default withStyles(styles)(RandomizedAlgorithms);

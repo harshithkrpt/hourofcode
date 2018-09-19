@@ -6,7 +6,6 @@ import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
 
-import Dimensions from "react-dimensions";
 import Button from "../../../../UI/Button/Button";
 import Margin from "../../../../UI/Margin/Margin";
 
@@ -169,4 +168,4 @@ const DivideAndConquer = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(DivideAndConquer));
+export default withStyles(styles)(DivideAndConquer);

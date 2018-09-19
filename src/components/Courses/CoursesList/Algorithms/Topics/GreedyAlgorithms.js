@@ -1,14 +1,12 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
-import { Divider } from "@material-ui/core";
 import ButtonWithLink from "../../../../UI/Button/Button";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
 
-import Dimensions from "react-dimensions";
 import Margin from "../../../../UI/Margin/Margin";
 
 export const VideoComponent = props => {
@@ -140,4 +138,4 @@ const GreedyAlgorithms = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(GreedyAlgorithms));
+export default withStyles(styles)(GreedyAlgorithms);

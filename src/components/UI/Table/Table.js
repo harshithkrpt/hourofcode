@@ -19,49 +19,49 @@ const styles = theme => ({
   }
 });
 
-let id = 0;
-function createData(name, ds, tcb, tca, tcw, scw) {
-  id += 1;
-  return { id, name, ds, tcb, tca, tcw, scw };
-}
+// let id = 0;
+// function createData(name, ds, tcb, tca, tcw, scw) {
+//   id += 1;
+//   return { id, name, ds, tcb, tca, tcw, scw };
+// }
 
-const rows = [
-  createData(
-    "Quick Sort",
-    "Array",
-    "O(nlog(n))",
-    "O(nlog(n))",
-    "O(n^2)",
-    "O(n)"
-  ),
-  createData(
-    "Merge Sort",
-    "Array",
-    "O(nlog(n))",
-    "O(nlog(n))",
-    "O(nlog(n))",
-    "O(n)"
-  ),
-  createData(
-    "Heap Sort",
-    "Array",
-    "O(nlog(n))",
-    "O(nlog(n))",
-    "O(nlog(n))",
-    "O(1)"
-  ),
-  createData(
-    "Smooth Sort",
-    "Array",
-    "O(n)",
-    "O(nlog(n))",
-    "O(nlog(n))",
-    "O(1)"
-  ),
-  createData("Bubble Sort", "Array", "O(n)", "O(n^2)", "O(n^2)", "O(1)"),
-  createData("Insertion Sort", "Array", "O(n)", "O(n^2)", "O(n^2)", "O(1)"),
-  createData("Selection Sort", "Array", "O(n^2)", "O(n^2)", "O(n^2)", "O(1)")
-];
+// const rows = [
+//   createData(
+//     "Quick Sort",
+//     "Array",
+//     "O(nlog(n))",
+//     "O(nlog(n))",
+//     "O(n^2)",
+//     "O(n)"
+//   ),
+//   createData(
+//     "Merge Sort",
+//     "Array",
+//     "O(nlog(n))",
+//     "O(nlog(n))",
+//     "O(nlog(n))",
+//     "O(n)"
+//   ),
+//   createData(
+//     "Heap Sort",
+//     "Array",
+//     "O(nlog(n))",
+//     "O(nlog(n))",
+//     "O(nlog(n))",
+//     "O(1)"
+//   ),
+//   createData(
+//     "Smooth Sort",
+//     "Array",
+//     "O(n)",
+//     "O(nlog(n))",
+//     "O(nlog(n))",
+//     "O(1)"
+//   ),
+//   createData("Bubble Sort", "Array", "O(n)", "O(n^2)", "O(n^2)", "O(1)"),
+//   createData("Insertion Sort", "Array", "O(n)", "O(n^2)", "O(n^2)", "O(1)"),
+//   createData("Selection Sort", "Array", "O(n^2)", "O(n^2)", "O(n^2)", "O(1)")
+// ];
 
 function SimpleTable(props) {
   const { classes } = props;

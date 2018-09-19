@@ -7,7 +7,6 @@ import { Typography } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
 import Button from "../../../../UI/Button/Button";
 import Margin from "../../../../UI/Margin/Margin";
-import Dimensions from "react-dimensions";
 
 export const VideoComponent = props => {
   return (
@@ -121,4 +120,4 @@ const GraphAlgorithms = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(GraphAlgorithms));
+export default withStyles(styles)(GraphAlgorithms);

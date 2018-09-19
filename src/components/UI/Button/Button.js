@@ -16,12 +16,7 @@ function TextButtons(props) {
   const { classes } = props;
   return (
     <div>
-      <Button
-        color="primary"
-        className={classes.button}
-        link={props.link}
-        target="_blank"
-      >
+      <Button color="primary" className={classes.button}>
         <a href={props.link} target="_blank" style={{ textDecoration: "none" }}>
           {props.name}
         </a>

@@ -8,8 +8,6 @@ import { Paper } from "@material-ui/core";
 import Button from "../../../../UI/Button/Button";
 import Margin from "../../../../UI/Margin/Margin";
 
-import Dimensions from "react-dimensions";
-
 export const VideoComponent = props => {
   return (
     <div>
@@ -88,4 +86,4 @@ const BitAlgorithms = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(BitAlgorithms));
+export default withStyles(styles)(BitAlgorithms);

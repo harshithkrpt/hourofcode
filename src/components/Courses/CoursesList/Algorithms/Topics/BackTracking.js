@@ -6,7 +6,7 @@ import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
 import Button from "../../../../UI/Button/Button";
-import Dimensions from "react-dimensions";
+
 import Margin from "../../../../UI/Margin/Margin";
 
 export const VideoComponent = props => {
@@ -95,4 +95,4 @@ const BackTracking = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(BackTracking));
+export default withStyles(styles)(BackTracking);

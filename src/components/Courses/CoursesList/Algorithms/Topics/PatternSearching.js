@@ -5,10 +5,9 @@ import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
-import YoutubeThunb from "../../../../UI/YoutubeThumb/YoutubeThumb";
 
 import Button from "../../../../UI/Button/Button";
-import Dimensions from "react-dimensions";
+
 import Margin from "../../../../UI/Margin/Margin";
 export const VideoComponent = props => {
   return (
@@ -17,9 +16,7 @@ export const VideoComponent = props => {
         variant="headline"
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
-      >
-        <YoutubeThunb />
-      </Typography>
+      />
       <Youtube id="D6xkbGLQesk" />
     </div>
   );
@@ -88,4 +85,4 @@ const PatternSearching = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(PatternSearching));
+export default withStyles(styles)(PatternSearching);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
@@ -17,7 +17,7 @@ const styles = theme => ({
   }
 });
 
-class SimpleExpansionPanel {
+class SimpleExpansionPanel extends Component {
   render() {
     const { classes } = this.props;
     return (

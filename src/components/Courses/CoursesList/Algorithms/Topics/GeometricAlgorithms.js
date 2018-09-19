@@ -8,8 +8,6 @@ import { Paper } from "@material-ui/core";
 import Margin from "../../../../UI/Margin/Margin";
 import Button from "../../../../UI/Button/Button";
 
-import Dimensions from "react-dimensions";
-
 export const VideoComponent = props => {
   return (
     <div>
@@ -83,4 +81,4 @@ const GeometricAlgorithms = props => {
   );
 };
 
-export default withStyles(styles)(Dimensions()(GeometricAlgorithms));
+export default withStyles(styles)(GeometricAlgorithms);
