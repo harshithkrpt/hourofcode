@@ -57,9 +57,13 @@ class StepperForPath extends React.Component {
           {steps.map((label, index) => {
             return (
               <Step key={label}>
-                <StepLabel>{label}</StepLabel>
+                <StepLabel>
+                  <Typography component="h3" variant="headline" color="primary">
+                    {label}
+                  </Typography>
+                </StepLabel>
                 <StepContent>
-                  <Typography>{this.props.pathContent(index)}</Typography>
+                  <div>{this.props.pathContent(index)}</div>
                   <div className={classes.actionsContainer}>
                     <div>
                       <Button

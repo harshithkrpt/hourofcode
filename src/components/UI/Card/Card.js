@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
 const styles = {
   card: {
-    maxWidth: 345
+    maxWidth: window.innerWidth < 320 ? 250 : 345
   },
   media: {
     height: 140

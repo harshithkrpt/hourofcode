@@ -6,6 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import Youtube from "../../../UI/Youtube/Youtube";
 import "./Algorithm.css";
 import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
+import Margin from "../../../UI/Margin/Margin";
+import ReferenceCard from "../../../UI/ReferenceCard/ReferenceCard";
 
 // topics
 import AnalysisOfAlgoritm from "./Topics/AnalysisOfAlgorithm";
@@ -40,23 +42,129 @@ const styles = theme => ({
 
 // path
 function getSteps() {
-  return ["Learn Analysis Of Algorithm", "Create an ad group", "Create an ad"];
+  return ["First Steps", "Resources", "Using Resources"];
 }
 
 // switch cases
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return `For each ad campaign that you create, you can control how much
-                you're willing to spend on clicks and conversions, which networks
-                and geographical locations you want your ads to show on, and more.`;
+      return (
+        <React.Fragment>
+          <Typography component="p" variant="body2">
+            If you are truly interested in learning Algorithms follow below
+            steps regularly. Before that in next steps you will find resources
+            (Youtube videos) and free websites where you can learn "Algirithms".
+          </Typography>
+          <Margin />
+          <Typography component="h3" variant="headline">
+            Steps
+          </Typography>
+          <Typography component="p" variant="body2">
+            1. Do 1-2 Hrs of regular Coding
+          </Typography>
+          <Typography component="p" variant="body2">
+            2. Watch youtube videos
+          </Typography>
+          <Typography component="p" variant="body2">
+            3. Code Along while watching those videos
+          </Typography>
+          <Typography component="p" variant="body2">
+            4. Watch videos with 1.5x-2x speed if you are comfortable
+          </Typography>
+          <Typography component="p" variant="body2">
+            4. Repeat this daily
+          </Typography>
+        </React.Fragment>
+      );
     case 1:
-      return "An ad group contains one or more ads which target a shared set of keywords.";
+      return (
+        <React.Fragment>
+          <Typography component="p" variant="body2">
+            Below you will find links to all important youtube playlists , free
+            courses so only focus on one playlist or one course until you
+            finished . If you didn't understand any concept then try from other
+            resources feel free to watch them multiple times .
+          </Typography>
+          <Margin />
+          <Typography component="h3" variant="headline">
+            Resources
+          </Typography>
+          <Margin />
+          <Margin />
+          <Typography component="h3" variant="headline">
+            Using C/C++ Youtube Course
+          </Typography>
+          <Margin />
+          <ReferenceCard
+            link="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P"
+            title="Youtube PlayList (thecodeschool)"
+          >
+            <Typography component="p" variant="body2">
+              This playlist covers all the important algorithms and
+              datastructures implemented using c/c++
+            </Typography>
+          </ReferenceCard>
+          <Margin />
+          <Margin />
+          <Typography component="h3" variant="headline">
+            MIT Courses (theory)
+          </Typography>
+          <Margin />
+          <ReferenceCard
+            link="https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb"
+            title="Youtube Playlist (from MIT)"
+          >
+            <Typography component="p" variant="body2">
+              This is a popular youtube playlist . If you are intrested in
+              understanding the inner concepts of algorithms theoretically then
+              watch this playlist
+            </Typography>
+          </ReferenceCard>
+          <Margin />
+          <Margin />
+          <Typography component="h3" variant="headline">
+            Using Python (From Google)
+          </Typography>
+          <Margin />
+          <ReferenceCard
+            link="https://in.udacity.com/course/data-structures-and-algorithms-in-python--ud513"
+            title="Data Structures & Algorithms in Python"
+          >
+            <Typography component="p" variant="body2">
+              This is a free course from google . I highly recommend this but
+              this course is in python .
+            </Typography>
+          </ReferenceCard>
+          <Margin />
+          <Margin />
+          <Typography component="h3" variant="headline">
+            From EDX
+          </Typography>
+          <Margin />
+          <ReferenceCard
+            link=" https://www.edx.org/course/algorithm-design-analysis-pennx-sd3x"
+            title="Data Structures & Algorithms in Python"
+          >
+            <Typography component="p" variant="body2">
+              This is a free course from Edx.com . I highly recommend this but
+              this course is in python .
+            </Typography>
+          </ReferenceCard>
+        </React.Fragment>
+      );
     case 2:
-      return `Try out different ad text to see what brings in the most customers,
-                and learn how to enhance your ads using features like ad extensions.
-                If you run into any problems with your ads, find out how to tell if
-                they're running and how to resolve approval issues.`;
+      return (
+        <React.Fragment>
+          <Margin />
+          <Typography component="p" variant="body2">
+            As Mentioned earlier you should code along with them
+          </Typography>
+          <Typography component="p" variant="body2">
+            Finally Practice Practice ............
+          </Typography>
+        </React.Fragment>
+      );
     default:
       return "Unknown step";
   }

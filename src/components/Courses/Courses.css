@@ -5,12 +5,9 @@
   justify-items: center;
 }
 
-.courses div {
-  justify-self: center;
-}
-
 @media (max-width: 450px) {
   .courses {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 10px;
   }
 }

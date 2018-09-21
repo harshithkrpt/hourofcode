@@ -13,13 +13,12 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import {} from "@material-ui/icons";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import {
-  mailFolderListItems,
-  otherMailFolderListItems,
-  coursesRouteList
+  MailFolderListItems,
+  OtherMailFolderListItems,
+  CoursesRouteList
 } from "./TileData";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -165,12 +164,18 @@ class MainContainer extends React.Component {
         <Divider />
         {this.state.isHome ? (
           <React.Fragment>
-            <List>{mailFolderListItems}</List>
+            <List>
+              <MailFolderListItems click={this.handleDrawerClose} />
+            </List>
             <Divider />
-            <List>{otherMailFolderListItems}</List>
+            <List>
+              <OtherMailFolderListItems click={this.handleDrawerClose} />
+            </List>
           </React.Fragment>
         ) : (
-          <List>{coursesRouteList}</List>
+          <List>
+            <CoursesRouteList click={this.handleDrawerClose} />
+          </List>
         )}
       </Drawer>
     );
@@ -234,6 +239,7 @@ class MainContainer extends React.Component {
           >
             <Switch>
               <Route exact path="/" component={HomePage} />
+
               <Route exact path="/courses" component={Courses} />
               <Route exact path="/web_development" component={WebDevelopment} />
               <Route

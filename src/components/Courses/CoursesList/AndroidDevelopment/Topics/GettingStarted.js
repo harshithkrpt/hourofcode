@@ -20,7 +20,7 @@ const GettingStarted = props => {
   return (
     <React.Fragment>
       <Paper className={classes.root} elevation={1}>
-        <Typography component="h3" variant="display1" color="primary">
+        <Typography component="h3" variant="display1" color="default">
           Getting Started
         </Typography>
         <Margin />
@@ -87,6 +87,26 @@ const GettingStarted = props => {
             />
           </li>
         </ul>
+        <Margin />
+        <Margin />
+        <Typography component="h3" variant="headline">
+          Prerequisites
+        </Typography>
+        <Typography component="p" variant="body2">
+          1. A Laptop or PC
+        </Typography>
+        <Typography component="p" variant="body2">
+          2. Android Studio
+        </Typography>
+        <Typography component="p" variant="body2">
+          3. Java or Kotlin Languages
+        </Typography>
+        <Typography component="p" variant="body2">
+          4. SQL (useful not mandatory for beginners)
+        </Typography>
+        <Typography component="p" variant="body2">
+          5. XML (easy to learn )
+        </Typography>
       </Paper>
     </React.Fragment>
   );

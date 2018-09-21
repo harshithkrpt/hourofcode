@@ -94,7 +94,12 @@ class Courses extends Component {
     ));
     return (
       <React.Fragment>
-        <Typography component="h3" variant="display1" color="primary">
+        <Typography
+          component="h3"
+          variant="display1"
+          color="primary"
+          style={{ marginTop: "100px" }}
+        >
           Courses For You
         </Typography>
         <div className="courses" style={{ marginTop: "30px" }}>

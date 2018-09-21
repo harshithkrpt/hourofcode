@@ -1,5 +1,107 @@
-.youtube {
+.youtube-video {
+  margin: 20px auto 10px auto;
   display: grid;
-  justify-content: center;
-  color: #fff;
+  /* justify-content: center; */
+  justify-items: center;
+  position: relative;
+}
+
+.youtube-video img {
+  width: 550px;
+  height: 309px;
+}
+
+.svgholder:hover svg path {
+  fill: #ff0000;
+}
+
+.svgholder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.svgholder svg {
+  width: 60px;
+  height: 60px;
+}
+@media (max-width: 800px) {
+  .youtube-video img {
+    width: 500px;
+    height: 281px;
+  }
+}
+
+@media (max-width: 800px) {
+  .youtube-video img {
+    width: 480px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 700px) {
+  .youtube-video img {
+    width: 420px;
+    height: 236px;
+  }
+}
+@media (max-width: 750px) {
+  .youtube-video img {
+    width: 440px;
+    height: 247px;
+  }
+}
+
+@media (max-width: 650px) {
+  .youtube-video img {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 600px) {
+  .youtube-video img {
+    width: 380px;
+    height: 202px;
+  }
+}
+
+@media (max-width: 550px) {
+  .youtube-video img {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .youtube-video img {
+    width: 280px;
+    height: 157px;
+  }
+}
+
+@media (max-width: 450px) {
+  .youtube-video img {
+    width: 230px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 380px) {
+  .youtube-video img {
+    width: 210px;
+    height: 127px;
+  }
+}
+
+@media (max-width: 330px) {
+  .youtube-video img {
+    width: 140px;
+    height: 90px;
+  }
+  .youtube-video {
+    width: 80%;
+    margin: 20px auto;
+  }
 }
