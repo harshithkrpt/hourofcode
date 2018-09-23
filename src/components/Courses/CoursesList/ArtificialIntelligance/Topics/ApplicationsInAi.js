@@ -7,7 +7,7 @@ export default props => {
   return (
     <div>
       <Typography component="h3" variant="headline">
-        Applications in AI
+        Applications in AI and ML
       </Typography>
       <Margin />
 
@@ -74,6 +74,10 @@ export default props => {
       </Typography>
       <Margin />
       <Margin />
+      <Youtube id="fOvTtapxa9c" />
+      <Margin />
+      <Margin />
+
       <Margin />
       <Typography component="h3" variant="subheading" color="primary">
         Expert Systems

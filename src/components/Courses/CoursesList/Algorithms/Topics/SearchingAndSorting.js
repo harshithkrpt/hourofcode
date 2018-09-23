@@ -6,7 +6,6 @@ import ButtonWithLink from "../../../../UI/Button/Button";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 import Margin from "../../../../UI/Margin/Margin";
 export const VideoComponent = props => {
@@ -50,7 +49,7 @@ const SearchingAndSorting = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography component="h3" variant="display1" color="primary">
           Sorting
         </Typography>
@@ -200,7 +199,7 @@ const SearchingAndSorting = props => {
           link="https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm"
           name="For More Click Here"
         />
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };

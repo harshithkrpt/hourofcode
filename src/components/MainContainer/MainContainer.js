@@ -29,7 +29,7 @@ import Courses from "../Courses/Courses";
 import WebDevelopment from "../Courses/CoursesList/WebDevelopment/WebDevelopment";
 import AndroidDevelopment from "../Courses/CoursesList/AndroidDevelopment/AndroidDevelopment";
 import DataScience from "../Courses/CoursesList/DataScience/DataScience";
-import ComputerOrganisation from "../Courses/CoursesList/ComputerOrganization/ComputerOrganization";
+import BlockChain from "../Courses/CoursesList/BlockChain/BlockChain";
 import Algorithms from "../Courses/CoursesList/Algorithms/Algorithms";
 import Mathematics from "../Courses/CoursesList/Mathematics/Mathematics";
 import ProgrammingLanguages from "../Courses/CoursesList/ProgrammingLanguages/ProgrammingLanguages";
@@ -88,7 +88,8 @@ const styles = theme => ({
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing.unit * 3,
+    padding:
+      window.innerWidth < 500 ? theme.spacing.unit * 1 : theme.spacing.unit * 3,
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
@@ -256,11 +257,7 @@ class MainContainer extends React.Component {
               <Route exact path="/algorithms" component={Algorithms} />
               <Route exact path="/data_structures" component={DataStructures} />
               <Route exact path="/mathematics" component={Mathematics} />
-              <Route
-                exact
-                path="/computer_organization"
-                component={ComputerOrganisation}
-              />
+              <Route exact path="/block_chain" component={BlockChain} />
               <Route
                 path="/programming_languages"
                 component={ProgrammingLanguages}

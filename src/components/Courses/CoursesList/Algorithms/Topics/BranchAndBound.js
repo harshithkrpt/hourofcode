@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
+
 import Margin from "../../../../UI/Margin/Margin";
 import Button from "../../../../UI/Button/Button";
 
@@ -30,9 +30,7 @@ export const CodeComponent = props => {
         variant="headline"
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
-      >
-        Understanding Time Complexity
-      </Typography>
+      />
     </div>
   );
 };
@@ -49,7 +47,7 @@ const BranchAndBound = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography variant="display1" component="h3" color="primary">
           Branch And Bound
         </Typography>
@@ -86,7 +84,7 @@ const BranchAndBound = props => {
             buttonName="Watch Code Samples"
           />
         </div>
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };

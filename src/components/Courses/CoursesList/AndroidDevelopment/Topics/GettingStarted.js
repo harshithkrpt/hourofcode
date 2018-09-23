@@ -2,7 +2,6 @@ import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 import Margin from "../../../../UI/Margin/Margin";
 import Button from "../../../../UI/Button/Button";
@@ -19,7 +18,7 @@ const GettingStarted = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography component="h3" variant="display1" color="default">
           Getting Started
         </Typography>
@@ -107,7 +106,7 @@ const GettingStarted = props => {
         <Typography component="p" variant="body2">
           5. XML (easy to learn )
         </Typography>
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };

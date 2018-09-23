@@ -8,7 +8,7 @@ export default props => {
   return (
     <div>
       <Typography component="h3" variant="headline">
-        History Of AI
+        History Of AI and ML
       </Typography>
       <Margin />
       <Typography component="p" variant="subheading">

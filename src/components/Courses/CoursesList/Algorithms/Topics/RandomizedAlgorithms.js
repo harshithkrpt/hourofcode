@@ -7,7 +7,6 @@ import Button from "../../../../UI/Button/Button";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 export const VideoComponent = props => {
   return (
@@ -50,7 +49,7 @@ const RandomizedAlgorithms = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography component="h3" variant="display1" color="primary">
           Randomized Algorithms
         </Typography>
@@ -81,7 +80,7 @@ const RandomizedAlgorithms = props => {
           name="Click Here For More"
           link="https://www.geeksforgeeks.org/randomized-algorithms-set-1-introduction-and-analysis/"
         />
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };

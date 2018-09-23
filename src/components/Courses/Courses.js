@@ -7,7 +7,7 @@ import datascienceimg from "../../assets/images/data_science.jpeg";
 import algoimg from "../../assets/images/algorithms.png";
 import androiddevimg from "../../assets/images/androiddevelopment.jpeg";
 import artfimg from "../../assets/images/artificialinteligance.jpg";
-import cmporgimg from "../../assets/images/computerorgainzation.jpeg";
+import blkchainImg from "../../assets/images/blockchain.jpeg";
 import matheimg from "../../assets/images/mathematics.jpeg";
 import prolanimg from "../../assets/images/programminglanguages.png";
 import datastrimg from "../../assets/images/data_str_img.jpeg";
@@ -32,18 +32,18 @@ class Courses extends Component {
         link: "/android_development"
       },
       {
-        name: "Artificial Intelligence",
+        name: "Artificial Intelligence and Machine Learning",
         para:
           "Artificial Intelligence is a way of making a computer, a computer-controlled robot, or a software think intelligently, in the similar manner the intelligent humans think.Meachine Learning comes under AI",
         image: artfimg,
         link: "/artificial_intelligence"
       },
       {
-        name: "Computer Orgsanization",
+        name: "BlockChain",
         para:
-          "Computer Organization refers to the level of abstraction above the digital logic level, but below the operating system level.Oct 23, 2000.The Operating System of a computer is the core of its system software",
-        image: cmporgimg,
-        link: "/computer_organization"
+          "A blockchain, originally block chain, is a growing list of records, called blocks, which are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data.",
+        image: blkchainImg,
+        link: "/block_chain"
       },
       {
         name: "Data Science",

@@ -4,7 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 import Button from "../../../../UI/Button/Button";
 
@@ -48,7 +47,7 @@ const PatternSearching = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography component="h3" color="primary" variant="display1">
           Pattern Searching
         </Typography>
@@ -80,7 +79,7 @@ const PatternSearching = props => {
           name="Click Here For  More"
           link="https://www.geeksforgeeks.org/algorithms-gq/pattern-searching/"
         />
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };

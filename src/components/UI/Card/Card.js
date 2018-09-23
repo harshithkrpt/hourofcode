@@ -10,10 +10,11 @@ import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
 const styles = {
   card: {
-    maxWidth: window.innerWidth < 320 ? 250 : 345
+    maxWidth: window.innerWidth < 320 ? 250 : 345,
+    minHeight: 344
   },
   media: {
-    height: 140
+    minHeight: 140
   }
 };
 
@@ -28,7 +29,7 @@ function MediaCard(props) {
             image={props.image}
             title="Contemplative Reptile"
           />
-          <CardContent>
+          <CardContent style={{ height: "100%" }}>
             <Typography gutterBottom variant="headline" component="h2">
               {props.name}
             </Typography>

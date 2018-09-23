@@ -4,7 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 import Margin from "../../../../UI/Margin/Margin";
 import Button from "../../../../UI/Button/Button";
 
@@ -49,7 +48,7 @@ const GeometricAlgorithms = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography component="h3" variant="display1" color="primary">
           Geometrical Algorithms
         </Typography>
@@ -76,7 +75,7 @@ const GeometricAlgorithms = props => {
             buttonName="Watch Code Samples"
           />
         </div>
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };

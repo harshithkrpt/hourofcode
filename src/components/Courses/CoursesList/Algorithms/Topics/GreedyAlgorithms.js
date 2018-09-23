@@ -5,7 +5,6 @@ import ButtonWithLink from "../../../../UI/Button/Button";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 import Margin from "../../../../UI/Margin/Margin";
 
@@ -50,7 +49,7 @@ const GreedyAlgorithms = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography component="h3" variant="display1" color="primary">
           Greedy Algorithms
         </Typography>
@@ -133,7 +132,7 @@ const GreedyAlgorithms = props => {
           link="https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/"
           name="Click here for More"
         />
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };

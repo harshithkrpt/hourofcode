@@ -4,7 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 import Margin from "../../../../UI/Margin/Margin";
 
@@ -49,7 +48,7 @@ const BranchAndBound = props => {
   const { classes } = props;
   return (
     <React.Fragment>
-      <Paper className={classes.root} elevation={1}>
+      <div className={classes.root}>
         <Typography component="h3" color="primary" variant="display1">
           Dynamic Programming
         </Typography>
@@ -109,7 +108,7 @@ const BranchAndBound = props => {
             buttonName="Watch Code Samples"
           />
         </div>
-      </Paper>
+      </div>
     </React.Fragment>
   );
 };
