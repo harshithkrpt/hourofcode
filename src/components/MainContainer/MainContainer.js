@@ -31,10 +31,16 @@ import AndroidDevelopment from "../Courses/CoursesList/AndroidDevelopment/Androi
 import DataScience from "../Courses/CoursesList/DataScience/DataScience";
 import BlockChain from "../Courses/CoursesList/BlockChain/BlockChain";
 import Algorithms from "../Courses/CoursesList/Algorithms/Algorithms";
-import Mathematics from "../Courses/CoursesList/Mathematics/Mathematics";
 import ProgrammingLanguages from "../Courses/CoursesList/ProgrammingLanguages/ProgrammingLanguages";
 import DataStructures from "../Courses/CoursesList/DataStructures/DataStructures";
 import ArtificialIntelligance from "../Courses/CoursesList/ArtificialIntelligance/ArtificialIntelligance";
+
+import Java from "../Languages/Java/Java";
+import Python from "../Languages/Python/Python";
+import C from "../Languages/C/C";
+import Cpp from "../Languages/Cpp/Cpp";
+import JavaScript from "../Languages/JavaScript/JavaScript";
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -256,12 +262,21 @@ class MainContainer extends React.Component {
               />
               <Route exact path="/algorithms" component={Algorithms} />
               <Route exact path="/data_structures" component={DataStructures} />
-              <Route exact path="/mathematics" component={Mathematics} />
+
               <Route exact path="/block_chain" component={BlockChain} />
               <Route
+                exact
                 path="/programming_languages"
                 component={ProgrammingLanguages}
               />
+              <Route path="/programming_languages/c" component={C} />
+              <Route path="/programming_languages/c++" component={Cpp} />
+              <Route path="/programming_languages/java" component={Java} />
+              <Route
+                path="/programming_languages/javascript"
+                component={JavaScript}
+              />
+              <Route path="/programming_languages/python" component={Python} />
             </Switch>
           </main>
         </div>

@@ -8,7 +8,6 @@ import algoimg from "../../assets/images/algorithms.png";
 import androiddevimg from "../../assets/images/androiddevelopment.jpeg";
 import artfimg from "../../assets/images/artificialinteligance.jpg";
 import blkchainImg from "../../assets/images/blockchain.jpeg";
-import matheimg from "../../assets/images/mathematics.jpeg";
 import prolanimg from "../../assets/images/programminglanguages.png";
 import datastrimg from "../../assets/images/data_str_img.jpeg";
 import Typography from "@material-ui/core/Typography";
@@ -59,13 +58,7 @@ class Courses extends Component {
         image: datastrimg,
         link: "/data_structures"
       },
-      {
-        name: "Mathematics",
-        para:
-          "Discrete math is sometimes referred to as the math for computer science. Topics in discrete math that are used in computer science include graphs, recursive formulas, counting, logic, probability and matrices.",
-        image: matheimg,
-        link: "/mathematics"
-      },
+
       {
         name: "Programming Languages",
         para:

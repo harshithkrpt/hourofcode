@@ -1,67 +1,86 @@
 import React, { Component } from "react";
-// import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-// import Typography from "@material-ui/core/Typography";
-import Youtube from "../../../UI/Youtube/Youtube";
+import Card from "../../../UI/Card/Card";
+import "./ProgrammingLanguages.css";
+import { withStyles } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
-// import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
+import jsimg from "../../../../assets/images/javascript.png";
 
-// stepper
-// import Stepper from "../../../UI/Stepper/Stepper";
+import pythonimg from "../../../../assets/images/python.png";
 
-// // path
-// function getSteps() {
-//   return ["Learn Analysis Of Algorithm", "Create an ad group", "Create an ad"];
-// }
+import cimg from "../../../../assets/images/c.png";
 
-// // switch cases for path
-// function getStepContent(step) {
-//   switch (step) {
-//     case 0:
-//       return `For each ad campaign that you create, you can control how much
-//                 you're willing to spend on clicks and conversions, which networks
-//                 and geographical locations you want your ads to show on, and more.`;
-//     case 1:
-//       return "An ad group contains one or more ads which target a shared set of keywords.";
-//     case 2:
-//       return `Try out different ad text to see what brings in the most customers,
-//                 and learn how to enhance your ads using features like ad extensions.
-//                 If you run into any problems with your ads, find out how to tell if
-//                 they're running and how to resolve approval issues.`;
-//     default:
-//       return "Unknown step";
-//   }
-// }
+import cppimg from "../../../../assets/images/cpp.png";
 
-const styles = theme => ({
-  root: {
-    ...theme.mixins.gutters(),
-    paddingTop: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 2
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
-  }
-});
+import javaimg from "../../../../assets/images/java.png";
 
-class Algorithms extends Component {
+let styles = {};
+class ProgrammingLanguages extends Component {
   state = {
-    youtubeIds: ["6hfOvs8pY1k"]
+    data: [
+      {
+        name: "Java",
+        para:
+          "Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
+        image: javaimg,
+        link: "/programming_languages/java"
+      },
+      {
+        name: "Python",
+        para:
+          "Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace",
+        image: pythonimg,
+        link: "/programming_languages/python"
+      },
+      {
+        name: "C",
+        para:
+          "C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations.",
+        image: cimg,
+        link: "/programming_languages/c"
+      },
+      {
+        name: "C++",
+        para:
+          "C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.",
+        image: cppimg,
+        link: "/programming_languages/c++"
+      },
+      {
+        name: "JavaScript",
+        para:
+          "JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.",
+        image: jsimg,
+        link: "/programming_languages/javascript"
+      }
+    ]
   };
-
   render() {
-    const { classes } = this.props;
-
+    let data = this.state.data.map(dat => (
+      <Card
+        name={dat.name}
+        para={dat.para}
+        image={dat.image}
+        key={dat.name}
+        link={dat.link}
+      />
+    ));
     return (
-      <div style={{ marginTop: "100px" }}>
-        <Paper className={classes.root} elevation={0}>
-          <Youtube id={this.state.youtubeIds[0]} />
-        </Paper>
-      </div>
+      <React.Fragment>
+        <Typography
+          component="h3"
+          variant="display1"
+          color="primary"
+          style={{ marginTop: "100px" }}
+        >
+          Programming Languages
+        </Typography>
+        <div className="courses" style={{ marginTop: "30px" }}>
+          {data}
+        </div>
+      </React.Fragment>
     );
   }
 }
 
-export default withStyles(styles)(Algorithms);
+export default withStyles(styles)(ProgrammingLanguages);

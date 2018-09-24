@@ -223,7 +223,7 @@ class BlockChain extends Component {
 
     return (
       <div style={{ marginTop: "100px" }}>
-        <Paper className={classes.root} elevation={0}>
+        <Paper className={classes.root} elevation={2}>
           <Typography variant="headline" component="h3" color="primary">
             BlockChain
           </Typography>
