@@ -3,6 +3,7 @@ import Card from "../../../UI/Card/Card";
 import "./ProgrammingLanguages.css";
 import { withStyles } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 
 import jsimg from "../../../../assets/images/javascript.png";
 
@@ -67,6 +68,7 @@ class ProgrammingLanguages extends Component {
     ));
     return (
       <React.Fragment>
+        <ScrollToTop />
         <Typography
           component="h3"
           variant="display1"

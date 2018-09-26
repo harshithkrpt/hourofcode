@@ -22,6 +22,7 @@ import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
 
 // stepper
 import Stepper from "../../../UI/Stepper/Stepper";
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 
 // path
 function getSteps() {
@@ -34,51 +35,55 @@ function getStepContent(step) {
     case 0:
       return (
         <React.Fragment>
-          <Typography component="p" variant="body2">
-            If you are truly interested in learning Android Development follow
-            below steps regularly. Before that in next steps you will find
-            resources (Youtube videos) and free websites where you can learn
-            "Android Development".
-          </Typography>
-          <Margin />
-          <Typography component="h3" variant="headline">
-            Steps
-          </Typography>
-          <Typography component="p" variant="body2">
-            1. Do 1-2 Hrs of regular Coding
-          </Typography>
-          <Typography component="p" variant="body2">
-            2. Watch youtube videos
-          </Typography>
-          <Typography component="p" variant="body2">
-            3. Code Along while watching those videos
-          </Typography>
-          <Typography component="p" variant="body2">
-            4. Watch videos with 1.5x-2x speed if you are comfortable
-          </Typography>
-          <Typography component="p" variant="body2">
-            4. Repeat this daily
-          </Typography>
+          <div style={{ width: "100%" }}>
+            <Typography component="p" variant="body2">
+              If you are truly interested in learning Android Development follow
+              below steps regularly. Before that in next steps you will find
+              resources (Youtube videos) and free websites where you can learn
+              "Android Development".
+            </Typography>
+            <Margin />
+            <Typography component="h3" variant="headline">
+              Steps
+            </Typography>
+            <Typography component="p" variant="body2">
+              1. Do 1-2 Hrs of regular Coding
+            </Typography>
+            <Typography component="p" variant="body2">
+              2. Watch youtube videos
+            </Typography>
+            <Typography component="p" variant="body2">
+              3. Code Along while watching those videos
+            </Typography>
+            <Typography component="p" variant="body2">
+              4. Watch videos with 1.5x-2x speed if you are comfortable
+            </Typography>
+            <Typography component="p" variant="body2">
+              4. Repeat this daily
+            </Typography>
+          </div>
         </React.Fragment>
       );
     case 1:
       return (
         <React.Fragment>
-          <Typography component="p" variant="body2" color="primary">
-            List of Courses
-          </Typography>
-          <Button
-            name="Fundementals Edx Course Link"
-            link="https://www.edx.org/course/foundations-of-data-structures"
-          />
-          <Button
-            name="Foundations Edx Course Link"
-            link="https://www.edx.org/course/foundations-of-data-structures"
-          />
-          <Button
-            name="Youtube PlayList Course (Imp)"
-            link="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P"
-          />
+          <div style={{ width: "100%" }}>
+            <Typography component="p" variant="body2" color="primary">
+              List of Courses
+            </Typography>
+            <Button
+              name="Fundementals Edx Course Link"
+              link="https://www.edx.org/course/foundations-of-data-structures"
+            />
+            <Button
+              name="Foundations Edx Course Link"
+              link="https://www.edx.org/course/foundations-of-data-structures"
+            />
+            <Button
+              name="Youtube PlayList Course (Imp)"
+              link="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P"
+            />
+          </div>
         </React.Fragment>
       );
 
@@ -104,7 +109,8 @@ class DataStructures extends Component {
     const { classes } = this.props;
 
     return (
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "100px", width: "95vw" }}>
+        <ScrollToTop />
         <Paper className={classes.root} elevation={0}>
           <Typography variant="display1" component="h3" color="primary">
             Data Structures

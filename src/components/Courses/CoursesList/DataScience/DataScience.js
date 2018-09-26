@@ -15,6 +15,7 @@ import References from "./Topics/References";
 
 // stepper
 import Stepper from "../../../UI/Stepper/Stepper";
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 // path
 function getSteps() {
   return ["First Steps", "From Reference's"];
@@ -26,6 +27,7 @@ function getStepContent(step) {
     case 0:
       return (
         <React.Fragment>
+          <ScrollToTop />
           <Typography component="p" variant="body2">
             If you are truly interested in learning Data Science follow below
             steps regularly. And you can learn the basics of Data Science with

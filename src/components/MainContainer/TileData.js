@@ -3,6 +3,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 
+import BookMarks from "@material-ui/icons/Bookmarks";
 import SchoolIcon from "@material-ui/icons/School";
 import HomeIcon from "@material-ui/icons/Apps";
 import { Link } from "react-router-dom";
@@ -27,6 +28,12 @@ export const OtherMailFolderListItems = props => {
           <SchoolIcon />
         </ListItemIcon>
         <ListItemText primary="Courses" />
+      </ListItem>
+      <ListItem button component={Link} to="/programming_languages/java">
+        <ListItemIcon>
+          <BookMarks />
+        </ListItemIcon>
+        <ListItemText primary="Java" />
       </ListItem>
     </div>
   );

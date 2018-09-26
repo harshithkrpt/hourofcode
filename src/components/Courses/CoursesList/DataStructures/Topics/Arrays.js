@@ -49,42 +49,39 @@ const styles = theme => ({
 const Arrays = props => {
   const { classes } = props;
   return (
-    <React.Fragment>
-      <div className={classes.root}>
-        <Typography component="h3" variant="display1" color="primary">
-          Arrays
-        </Typography>
-        <Margin />
-        <Typography component="p" variant="body2">
-          An array is a collection of items stored at contiguous memory
-          locations. The idea is to store multiple items of the same type
-          together. This makes it easier to calculate the position of each
-          element by simply adding an offset to a base value, i.e., the memory
-          location of the first element of the array (generally denoted by the
-          name of the array).
-        </Typography>
-        <Margin />
-        <Margin />
-        <Margin />
-        <Youtube id="2zPEHYoiyfc" />
-        <div style={{ display: "flex", marginTop: "20px" }}>
-          <FullScreenModal
-            heading="Analysis of Algorithms"
-            component={<VideoComponent />}
-            buttonName="Watch Video Samples"
-          />
-          <FullScreenModal
-            heading="Analysis Of Algorithms"
-            component={<CodeComponent />}
-            buttonName="Watch Code Samples"
-          />
-        </div>
-        <Button
-          name="Click Here For More"
-          link="https://www.geeksforgeeks.org/array-data-structure/"
+    <div className={classes.root}>
+      <Typography component="h3" variant="display1" color="primary">
+        Arrays
+      </Typography>
+      <Margin />
+      <Typography component="p" variant="body2">
+        An array is a collection of items stored at contiguous memory locations.
+        The idea is to store multiple items of the same type together. This
+        makes it easier to calculate the position of each element by simply
+        adding an offset to a base value, i.e., the memory location of the first
+        element of the array (generally denoted by the name of the array).
+      </Typography>
+      <Margin />
+      <Margin />
+      <Margin />
+      <Youtube id="2zPEHYoiyfc" />
+      <div style={{ display: "flex", marginTop: "20px" }}>
+        <FullScreenModal
+          heading="Analysis of Algorithms"
+          component={<VideoComponent />}
+          buttonName="Watch Video Samples"
+        />
+        <FullScreenModal
+          heading="Analysis Of Algorithms"
+          component={<CodeComponent />}
+          buttonName="Watch Code Samples"
         />
       </div>
-    </React.Fragment>
+      <Button
+        name="Click Here For More"
+        link="https://www.geeksforgeeks.org/array-data-structure/"
+      />
+    </div>
   );
 };
 

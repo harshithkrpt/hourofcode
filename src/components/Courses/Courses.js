@@ -75,6 +75,10 @@ class Courses extends Component {
       }
     ]
   };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     let data = this.state.data.map(dat => (
       <Card

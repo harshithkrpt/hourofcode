@@ -3,14 +3,16 @@ import React from "react";
 import { Typography, Paper, Divider } from "@material-ui/core";
 import ExpansionPanel from "../../UI/ExpansionPanel/ExpansionPanel";
 import Margin from "../../UI/Margin/Margin";
-import Youtube from "../../UI/Youtube/Youtube";
-import Card from "../../UI/Card/Card";
+//import Youtube from "../../UI/Youtube/Youtube";
 import JavaBasics from "./Topics/JavaBasics";
+import ScrollToTop from "../../UI/ScrollToTop/ScrollToTop";
+import CodeSamples from "./Topics/CodeSamples";
 
 export default () => {
   return (
     <div style={{ marginTop: "100px" }}>
       <Paper elevation={2} style={{ padding: "30px" }}>
+        <ScrollToTop />
         <Typography component="h3" variant="display1" color="primary">
           Java
         </Typography>
@@ -121,6 +123,16 @@ export default () => {
         </Typography>
         <Margin />
         <ExpansionPanel heading="Java Basics" component={<JavaBasics />} />
+      </Paper>
+
+      <Margin />
+      <Margin />
+      <Paper style={{ padding: "10px" }} elevation={2}>
+        <Typography component="h3" variant="headline" color="primary">
+          Code Samples
+        </Typography>
+        <Margin />
+        <ExpansionPanel heading="Code Samples" component={<CodeSamples />} />
       </Paper>
     </div>
   );

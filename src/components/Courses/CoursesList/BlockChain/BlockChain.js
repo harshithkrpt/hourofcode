@@ -14,6 +14,7 @@ import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
 
 // stepper
 import Stepper from "../../../UI/Stepper/Stepper";
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 
 // path
 function getSteps() {
@@ -223,6 +224,7 @@ class BlockChain extends Component {
 
     return (
       <div style={{ marginTop: "100px" }}>
+        <ScrollToTop />
         <Paper className={classes.root} elevation={2}>
           <Typography variant="headline" component="h3" color="primary">
             BlockChain

@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 // import Typography from "@material-ui/core/Typography";
 import Youtube from "../../../UI/Youtube/Youtube";
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 
 // import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
 
@@ -56,6 +57,7 @@ class Algorithms extends Component {
 
     return (
       <div style={{ marginTop: "100px" }}>
+        <ScrollToTop />
         <Paper className={classes.root} elevation={0}>
           <Youtube id={this.state.youtubeIds[0]} />
         </Paper>

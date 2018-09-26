@@ -13,6 +13,7 @@ import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
 
 // stepper
 import Stepper from "../../../UI/Stepper/Stepper";
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 
 // path
 function getSteps() {
@@ -55,6 +56,7 @@ function getStepContent(step) {
     case 1:
       return (
         <React.Fragment>
+          <ScrollToTop />
           <Typography component="p" variant="body2">
             Below you will find links to all important youtube playlists , free
             courses so only focus on one playlist or one course until you

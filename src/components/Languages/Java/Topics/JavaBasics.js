@@ -6,6 +6,7 @@ import FullScreenModal from "../../../UI/FullScreenModal/FullScreenModal";
 import Margin from "../../../UI/Margin/Margin";
 import { OopsParadigm } from "./subtopics/OopsParadigm";
 import DataTypes from "./subtopics/DataTypes";
+import Operators from "./subtopics/Operators";
 const JavaBasics = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const JavaBasics = () => {
         component={<OopsParadigm />}
         buttonName="Click Here"
       />
+
       <Margin />
       <Typography component="h3" variant="subheading">
         2. Data Types
@@ -25,6 +27,15 @@ const JavaBasics = () => {
       <FullScreenModal
         heading="Data Types"
         component={<DataTypes />}
+        buttonName="Click Here"
+      />
+      <Margin />
+      <Typography component="h3" variant="subheading">
+        3. Operators
+      </Typography>
+      <FullScreenModal
+        heading="Operators"
+        component={<Operators />}
         buttonName="Click Here"
       />
     </div>

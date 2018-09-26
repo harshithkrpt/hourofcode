@@ -27,6 +27,7 @@ import BranchAndBound from "./Topics/BranchAndBound";
 
 // stepper
 import Stepper from "../../../UI/Stepper/Stepper";
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 
 const styles = theme => ({
   root: {
@@ -51,6 +52,7 @@ function getStepContent(step) {
     case 0:
       return (
         <React.Fragment>
+          <ScrollToTop />
           <Typography component="p" variant="body2">
             If you are truly interested in learning Algorithms follow below
             steps regularly. Before that in next steps you will find resources

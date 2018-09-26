@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Youtube from "../../../UI/Youtube/Youtube";
 import Margin from "../../../UI/Margin/Margin";
 import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
-
+import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
 import ApplicationsInAi from "./Topics/ApplicationsInAi";
 import HistoryOfAi from "./Topics/HistoryOfAi";
 import MoreTheoryOnAi from "./Topics/MoreTheoryOnAi";
@@ -204,6 +204,7 @@ const ArtificialIntelligance = props => {
   const { classes } = props;
   return (
     <div style={{ marginTop: "100px" }}>
+      <ScrollToTop />
       <Paper className={classes.root} elevation={0}>
         <Typography variant="display1" component="h3" color="primary">
           Artificial Intelligance and Machine Learning
