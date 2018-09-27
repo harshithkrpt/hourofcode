@@ -2,9 +2,8 @@ import React, { Component } from "react";
 // import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-// import Typography from "@material-ui/core/Typography";
-import Youtube from "../../../UI/Youtube/Youtube";
 import ScrollToTop from "../../../UI/ScrollToTop/ScrollToTop";
+import { Typography } from "@material-ui/core";
 
 // import ExpansionPanel from "../../../UI/ExpansionPanel/ExpansionPanel";
 
@@ -48,10 +47,6 @@ const styles = theme => ({
 });
 
 class Algorithms extends Component {
-  state = {
-    youtubeIds: ["6hfOvs8pY1k"]
-  };
-
   render() {
     const { classes } = this.props;
 
@@ -59,7 +54,14 @@ class Algorithms extends Component {
       <div style={{ marginTop: "100px" }}>
         <ScrollToTop />
         <Paper className={classes.root} elevation={0}>
-          <Youtube id={this.state.youtubeIds[0]} />
+          <Typography
+            style={{ marginTop: "50vh", textAlign: "center" }}
+            color="primary"
+            component="h3"
+            variant="display2"
+          >
+            Comming Soon
+          </Typography>
         </Paper>
       </div>
     );
