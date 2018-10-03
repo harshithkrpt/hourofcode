@@ -1,12 +1,23 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
-import ButtonWithLink from "../../../../UI/Button/Button";
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
-import { Typography } from "@material-ui/core";
+import { Typography, Divider } from "@material-ui/core";
 
+import ButtonWithLink from "../../../../UI/Button/Button";
 import Margin from "../../../../UI/Margin/Margin";
+import YoutubeMid from "../../../../UI/Youtube/YoutubeMid";
+import OutputCard from "../../../../UI/OutPutCard/OutPutCard";
+import { CodeData } from "../../../../../Code/CodeData/CodeData";
+import {
+  Example1,
+  Example1Output,
+  Example2,
+  Example2Output,
+  Example3,
+  Example3Output
+} from "./CodeSamples/GreedyCS";
 
 export const VideoComponent = props => {
   return (
@@ -16,9 +27,67 @@ export const VideoComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Greedy Algorithm Tutorials
       </Typography>
-      <Youtube id="D6xkbGLQesk" />
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Introduction
+      </Typography>
+      <YoutubeMid id="ARvQcqJ_-NY" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Knapsack Problem - Greedy Method
+      </Typography>
+      <Youtube id="oTTzNMHM05I" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Prims and Krushkals Methods
+      </Typography>
+      <Youtube id="4ZlRH0eK-qQ" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Huffman Coding
+      </Typography>
+      <Youtube id="co4_ahEDCho" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Job Sequencing with deadlines
+      </Typography>
+      <Youtube id="zPtI8q9gvX8" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Dijkstra Algorithm - SSSP
+      </Typography>
+      <Youtube id="XB4MIexjvY0" />
     </div>
   );
 };
@@ -31,8 +100,70 @@ export const CodeComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Greedy Algorithms
       </Typography>
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Krushkals Algorithm
+      </Typography>
+      <CodeData code={Example1} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example1Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Prims Algorithm
+      </Typography>
+      <CodeData code={Example2} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example2Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Huffman Coding
+      </Typography>
+      <CodeData code={Example3} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example3Output} />
+      <Divider />
     </div>
   );
 };
@@ -118,12 +249,12 @@ const GreedyAlgorithms = props => {
 
         <div style={{ display: "flex", marginTop: "20px" }}>
           <FullScreenModal
-            heading="Analysis of Algorithms"
+            heading="Greedy Algorithms"
             component={<VideoComponent />}
             buttonName="Watch Video Samples"
           />
           <FullScreenModal
-            heading="Analysis Of Algorithms"
+            heading="Greedy Algorithms"
             component={<CodeComponent />}
             buttonName="Watch Code Samples"
           />

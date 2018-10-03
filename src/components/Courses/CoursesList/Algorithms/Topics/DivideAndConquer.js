@@ -3,10 +3,21 @@ import { withStyles } from "@material-ui/core/styles";
 
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
-import { Typography } from "@material-ui/core";
+import { Typography, Divider } from "@material-ui/core";
 
 import Button from "../../../../UI/Button/Button";
 import Margin from "../../../../UI/Margin/Margin";
+import OutputCard from "../../../../UI/OutPutCard/OutPutCard";
+import { CodeData } from "../../../../../Code/CodeData/CodeData";
+
+import {
+  Example1,
+  Example1Output,
+  Example2,
+  Example2Output,
+  Example3,
+  Example3Output
+} from "./CodeSamples/DivideAndConquerCS";
 
 export const VideoComponent = props => {
   return (
@@ -16,9 +27,47 @@ export const VideoComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Divide And Conquer Tutorials
       </Typography>
-      <Youtube id="D6xkbGLQesk" />
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Introduction
+      </Typography>
+      <Youtube id="2Rr2tW9zvRg" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Strassens Matrix Multiplication
+      </Typography>
+      <Youtube id="0oJyNmEbS4w" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Quick Sort Algorithm
+      </Typography>
+      <Youtube id="7h1s2SojIRw" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Merge Sort Algorithm
+      </Typography>
+      <Youtube id="mB5HXBb_HY8" />
     </div>
   );
 };
@@ -31,8 +80,70 @@ export const CodeComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Divide and Conquer Code
       </Typography>
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Merging of Two Sorted Arrays
+      </Typography>
+      <CodeData code={Example1} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example1Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Merge Sort Algorithm
+      </Typography>
+      <CodeData code={Example2} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example2Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Quick Sort Algorithm
+      </Typography>
+      <CodeData code={Example3} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example3Output} />
+      <Divider />
     </div>
   );
 };
@@ -148,12 +259,12 @@ const DivideAndConquer = props => {
         </Typography>
         <div style={{ display: "flex", marginTop: "20px" }}>
           <FullScreenModal
-            heading="Analysis of Algorithms"
+            heading="Divide And Conquer"
             component={<VideoComponent />}
             buttonName="Watch Video Samples"
           />
           <FullScreenModal
-            heading="Analysis Of Algorithms"
+            heading="Divide and Conquer"
             component={<CodeComponent />}
             buttonName="Watch Code Samples"
           />

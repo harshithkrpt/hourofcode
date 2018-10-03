@@ -1,40 +1,10 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
-import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
-import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
+
 import Button from "../../../../UI/Button/Button";
 import Margin from "../../../../UI/Margin/Margin";
-
-export const VideoComponent = props => {
-  return (
-    <div>
-      <Typography
-        variant="headline"
-        style={{ textAlign: "center", marginTop: "20px" }}
-        component="h3"
-      >
-        Understanding Time Complexity
-      </Typography>
-      <Youtube id="D6xkbGLQesk" />
-    </div>
-  );
-};
-
-export const CodeComponent = props => {
-  return (
-    <div>
-      <Typography
-        variant="headline"
-        style={{ textAlign: "center", marginTop: "20px" }}
-        component="h3"
-      >
-        Understanding Time Complexity
-      </Typography>
-    </div>
-  );
-};
 
 const styles = theme => ({
   root: {
@@ -102,18 +72,6 @@ const GraphAlgorithms = props => {
           name="Click Here"
           link="https://www.tutorialspoint.com/parallel_algorithm/graph_algorithm.htm"
         />
-        <div style={{ display: "flex", marginTop: "20px" }}>
-          <FullScreenModal
-            heading="Analysis of Algorithms"
-            component={<VideoComponent />}
-            buttonName="Watch Video Samples"
-          />
-          <FullScreenModal
-            heading="Analysis Of Algorithms"
-            component={<CodeComponent />}
-            buttonName="Watch Code Samples"
-          />
-        </div>
       </div>
     </React.Fragment>
   );

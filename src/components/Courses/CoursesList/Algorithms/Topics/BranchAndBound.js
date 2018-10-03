@@ -3,10 +3,21 @@ import { withStyles } from "@material-ui/core/styles";
 
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
-import { Typography } from "@material-ui/core";
+import { Typography, Divider } from "@material-ui/core";
 
-import Margin from "../../../../UI/Margin/Margin";
 import Button from "../../../../UI/Button/Button";
+import Margin from "../../../../UI/Margin/Margin";
+import YoutubeMid from "../../../../UI/Youtube/YoutubeMid";
+import OutputCard from "../../../../UI/OutPutCard/OutPutCard";
+import { CodeData } from "../../../../../Code/CodeData/CodeData";
+import {
+  Example1,
+  Example1Output,
+  Example2,
+  Example2Output,
+  Example3,
+  Example3Output
+} from "./CodeSamples/BranchAndBoundCS";
 
 export const VideoComponent = props => {
   return (
@@ -16,9 +27,47 @@ export const VideoComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Branch And Bound Tutorials
       </Typography>
-      <Youtube id="D6xkbGLQesk" />
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Branch and Bound Introduction
+      </Typography>
+      <Youtube id="3RBNPc0_Q6g" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Travelling Sales Person Problem - Branch and Bound
+      </Typography>
+      <Youtube id="1FEP_sNb62k" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Knapsack using Branch and Bound
+      </Typography>
+      <YoutubeMid id="yV1d-b_NeK8" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        15 Puzzle Problems
+      </Typography>
+      <YoutubeMid id="tMwC2VSYSYs" />
     </div>
   );
 };
@@ -30,7 +79,71 @@ export const CodeComponent = props => {
         variant="headline"
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
-      />
+      >
+        Branch And Bound Code
+      </Typography>
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Implementation of 0/1 Knapsack using Branch and Bound
+      </Typography>
+      <CodeData code={Example1} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example1Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        8 Puzzles Question
+      </Typography>
+      <CodeData code={Example2} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example2Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        N Queen Problem using Branch And Bound
+      </Typography>
+      <CodeData code={Example3} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example3Output} />
+      <Divider />
     </div>
   );
 };
@@ -74,12 +187,12 @@ const BranchAndBound = props => {
         />
         <div style={{ display: "flex", marginTop: "20px" }}>
           <FullScreenModal
-            heading="Analysis of Algorithms"
+            heading="Branch And Bound"
             component={<VideoComponent />}
             buttonName="Watch Video Samples"
           />
           <FullScreenModal
-            heading="Analysis Of Algorithms"
+            heading="Branch And Bound"
             component={<CodeComponent />}
             buttonName="Watch Code Samples"
           />

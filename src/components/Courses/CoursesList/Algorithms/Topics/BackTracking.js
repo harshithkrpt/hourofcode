@@ -3,11 +3,16 @@ import { withStyles } from "@material-ui/core/styles";
 
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
-import { Typography } from "@material-ui/core";
+import YoutubeMid from "../../../../UI/Youtube/YoutubeMid";
+
+import { Typography, Divider } from "@material-ui/core";
 
 import Button from "../../../../UI/Button/Button";
 
 import Margin from "../../../../UI/Margin/Margin";
+import { CodeData } from "../../../../../Code/CodeData/CodeData";
+import OutputCard from "../../../../UI/OutPutCard/OutPutCard";
+import { Example1, Example1Output } from "./CodeSamples/BacktrackingCS";
 
 export const VideoComponent = props => {
   return (
@@ -17,9 +22,67 @@ export const VideoComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding BackTracking
+        Back Tracking Videos
       </Typography>
-      <Youtube id="D6xkbGLQesk" />
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Introduction to Backtracking
+      </Typography>
+      <Youtube id="DKCbsiDBN6c" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        N Queens Problem using Backtracking
+      </Typography>
+      <Youtube id="xFv_Hl4B83A" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Sum of Subsets
+      </Typography>
+      <YoutubeMid id="kyLxTdsT8ws" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Graph Coloring Method
+      </Typography>
+      <Youtube id="052VkKhIaQ4" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Hamiltonian Cycle
+      </Typography>
+      <Youtube id="dQr4wZCiJJ4" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Sudoku Backtracking
+      </Typography>
+      <Youtube id="l7f9-GNH1j8" />
     </div>
   );
 };
@@ -32,8 +95,28 @@ export const CodeComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Back Tracking
+        BackTracking Programmes
       </Typography>
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Program to print all permutations of a given string
+      </Typography>
+      <CodeData code={Example1} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example1Output} />
+      <Divider />
     </div>
   );
 };
@@ -76,12 +159,12 @@ const BackTracking = props => {
         <Youtube id="DKCbsiDBN6c" />
         <div style={{ display: "flex", marginTop: "20px" }}>
           <FullScreenModal
-            heading="Analysis of Algorithms"
+            heading="Back Tracking"
             component={<VideoComponent />}
             buttonName="Watch Video Samples"
           />
           <FullScreenModal
-            heading="Analysis Of Algorithms"
+            heading="Back Tracking"
             component={<CodeComponent />}
             buttonName="Watch Code Samples"
           />

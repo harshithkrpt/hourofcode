@@ -1,40 +1,10 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
-import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
-import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
-import Margin from "../../../../UI/Margin/Margin";
+
 import Button from "../../../../UI/Button/Button";
-
-export const VideoComponent = props => {
-  return (
-    <div>
-      <Typography
-        variant="headline"
-        style={{ textAlign: "center", marginTop: "20px" }}
-        component="h3"
-      >
-        Understanding Time Complexity
-      </Typography>
-      <Youtube id="D6xkbGLQesk" />
-    </div>
-  );
-};
-
-export const CodeComponent = props => {
-  return (
-    <div>
-      <Typography
-        variant="headline"
-        style={{ textAlign: "center", marginTop: "20px" }}
-        component="h3"
-      >
-        Understanding Time Complexity
-      </Typography>
-    </div>
-  );
-};
+import Margin from "../../../../UI/Margin/Margin";
 
 const styles = theme => ({
   root: {
@@ -63,18 +33,6 @@ const GeometricAlgorithms = props => {
           name="Click Here For More"
           link="https://www.geeksforgeeks.org/geometric-algorithms/"
         />
-        <div style={{ display: "flex", marginTop: "20px" }}>
-          <FullScreenModal
-            heading="Analysis of Algorithms"
-            component={<VideoComponent />}
-            buttonName="Watch Video Samples"
-          />
-          <FullScreenModal
-            heading="Analysis Of Algorithms"
-            component={<CodeComponent />}
-            buttonName="Watch Code Samples"
-          />
-        </div>
       </div>
     </React.Fragment>
   );

@@ -1,13 +1,23 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
-import ButtonWithLink from "../../../../UI/Button/Button";
-
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
-import { Typography } from "@material-ui/core";
+import { Typography, Divider } from "@material-ui/core";
 
+import Button from "../../../../UI/Button/Button";
 import Margin from "../../../../UI/Margin/Margin";
+import OutputCard from "../../../../UI/OutPutCard/OutPutCard";
+import { CodeData } from "../../../../../Code/CodeData/CodeData";
+import {
+  Example1,
+  Example1Output,
+  Example2,
+  Example2Output,
+  Example3,
+  Example3Output
+} from "./CodeSamples/SearchAndSortingCS";
+
 export const VideoComponent = props => {
   return (
     <div>
@@ -16,9 +26,67 @@ export const VideoComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Searching and Sorting
       </Typography>
-      <Youtube id="D6xkbGLQesk" />
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Introduction
+      </Typography>
+      <Youtube id="pkkFqlG0Hds" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Selection Sort
+      </Typography>
+      <Youtube id="GUDLRan2DWM" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Bubble Sort
+      </Typography>
+      <Youtube id="GUDLRan2DWM" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Insertion Sort
+      </Typography>
+      <Youtube id="Jdtq5uKz-w4" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Merge Sort
+      </Typography>
+      <Youtube id="Jdtq5uKz-w4" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Quick Sort
+      </Typography>
+      <Youtube id="Jdtq5uKz-w4" />
     </div>
   );
 };
@@ -31,8 +99,70 @@ export const CodeComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Searching and Sorting
       </Typography>
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Insertion Sort
+      </Typography>
+      <CodeData code={Example1} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example1Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Merge Sort
+      </Typography>
+      <CodeData code={Example2} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example2Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Binary Search
+      </Typography>
+      <CodeData code={Example3} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example3Output} />
+      <Divider />
     </div>
   );
 };
@@ -185,17 +315,17 @@ const SearchingAndSorting = props => {
         </Typography>
         <div style={{ display: "flex", marginTop: "20px" }}>
           <FullScreenModal
-            heading="Analysis of Algorithms"
+            heading="Searching And Sorting"
             component={<VideoComponent />}
             buttonName="Watch Video Samples"
           />
           <FullScreenModal
-            heading="Analysis Of Algorithms"
+            heading="Searching And Sorting"
             component={<CodeComponent />}
             buttonName="Watch Code Samples"
           />
         </div>
-        <ButtonWithLink
+        <Button
           link="https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm"
           name="For More Click Here"
         />

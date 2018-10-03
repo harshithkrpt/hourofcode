@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 
 const styles = {
   card: {
-    minWidth: 100
+    minWidth: 70
   },
   bullet: {
     display: "inline-block",

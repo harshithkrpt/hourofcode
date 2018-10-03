@@ -7,10 +7,10 @@ import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
 import { Typography } from "@material-ui/core";
 
+import Margin from "../../../../UI/Margin/Margin";
 import Table from "../../../../UI/Table/Table";
 
 import ButtonWithLink from "../../../../UI/Button/Button";
-// import Chart from "../../../../UI/Chart/Chart";
 
 export const VideoComponent = props => {
   return (
@@ -19,24 +19,70 @@ export const VideoComponent = props => {
         variant="headline"
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
+        color="textPrimary"
       >
-        Understanding Time Complexity
+        Videos On Analysis Of Algorithms
+      </Typography>
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        color="primary"
+        variant="subheading"
+      >
+        Big O
       </Typography>
       <Youtube id="D6xkbGLQesk" />
-    </div>
-  );
-};
-
-export const CodeComponent = props => {
-  return (
-    <div>
+      <Margin />
       <Typography
-        variant="headline"
-        style={{ textAlign: "center", marginTop: "20px" }}
-        component="h3"
+        style={{ marginLeft: "30px" }}
+        color="primary"
+        variant="subheading"
       >
-        Unders
+        Analyze Algorithm
       </Typography>
+      <Youtube id="FbYzBWdhMb0" />
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        color="primary"
+        variant="subheading"
+      >
+        Frequency Count Method
+      </Typography>
+      <Youtube id="xGYsEqe9Vl0" />
+      <Margin />
+
+      <Typography
+        style={{ marginLeft: "30px" }}
+        color="primary"
+        variant="subheading"
+      >
+        Time Complexity
+      </Typography>
+      <Youtube id="9TlHvipP5yA" />
+      <Margin />
+
+      <Typography
+        style={{ marginLeft: "30px" }}
+        color="primary"
+        variant="subheading"
+      >
+        Time Complexity for While and If
+      </Typography>
+      <Youtube id="p1EnSvS3urU" />
+      <Margin />
+
+      <Typography
+        style={{ marginLeft: "30px" }}
+        color="primary"
+        variant="subheading"
+      >
+        Classes of Functions
+      </Typography>
+      <Youtube id="w7t4_JUUTeg" />
+      <Margin />
+
+      <Margin />
     </div>
   );
 };
@@ -270,11 +316,6 @@ const AnalysisOfAlgrithm = props => {
             heading="Analysis of Algorithms"
             component={<VideoComponent />}
             buttonName="Watch Video Samples"
-          />
-          <FullScreenModal
-            heading="Analysis Of Algorithms"
-            component={<CodeComponent />}
-            buttonName="Watch Code Samples"
           />
         </div>
         <ButtonWithLink

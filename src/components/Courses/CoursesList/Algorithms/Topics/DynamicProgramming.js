@@ -3,9 +3,20 @@ import { withStyles } from "@material-ui/core/styles";
 
 import FullScreenModal from "../../../../UI/FullScreenModal/FullScreenModal";
 import Youtube from "../../../../UI/Youtube/Youtube";
-import { Typography } from "@material-ui/core";
+import { Typography, Divider } from "@material-ui/core";
 
 import Margin from "../../../../UI/Margin/Margin";
+import OutputCard from "../../../../UI/OutPutCard/OutPutCard";
+import { CodeData } from "../../../../../Code/CodeData/CodeData";
+
+import {
+  Example1,
+  Example1Output,
+  Example2,
+  Example2Output,
+  Example3,
+  Example3Output
+} from "./CodeSamples/DynamicProgrammingCS";
 
 export const VideoComponent = props => {
   return (
@@ -15,9 +26,47 @@ export const VideoComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Dynamic Programming
       </Typography>
-      <Youtube id="D6xkbGLQesk" />
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Introduction
+      </Typography>
+      <Youtube id="vYquumk4nWwzhu605v9KOI" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Principles of Dynamic Programming
+      </Typography>
+      <Youtube id="5dRGRueKU3M" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Matrix Chain Multiplication
+      </Typography>
+      <Youtube id="prx1psByp7U" />
+
+      <Margin />
+      <Typography
+        style={{ marginLeft: "30px" }}
+        component="h3"
+        variant="subheading"
+      >
+        Fibonacci using Dynamic Programming
+      </Typography>
+      <Youtube id="OQ5jsbhAv_M" />
     </div>
   );
 };
@@ -30,8 +79,70 @@ export const CodeComponent = props => {
         style={{ textAlign: "center", marginTop: "20px" }}
         component="h3"
       >
-        Understanding Time Complexity
+        Dynamic Programming Code
       </Typography>
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Matrix Multiplication using Dynamic Programming
+      </Typography>
+      <CodeData code={Example1} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example1Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        Subset Sum Problem
+      </Typography>
+      <CodeData code={Example2} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example2Output} />
+      <Divider />
+
+      <Margin />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="primary"
+        style={{ marginLeft: "20px" }}
+      >
+        0-1 Knapsack Problem
+      </Typography>
+      <CodeData code={Example3} />
+      <Typography
+        component="h3"
+        variant="subheading"
+        color="secondary"
+        style={{ marginLeft: "20px" }}
+      >
+        Output
+      </Typography>
+      <OutputCard data={Example3Output} />
+      <Divider />
     </div>
   );
 };
@@ -98,12 +209,12 @@ const BranchAndBound = props => {
         <Youtube id="vYquumk4nWw" />
         <div style={{ display: "flex", marginTop: "20px" }}>
           <FullScreenModal
-            heading="Analysis of Algorithms"
+            heading="Dynamic Programming"
             component={<VideoComponent />}
             buttonName="Watch Video Samples"
           />
           <FullScreenModal
-            heading="Analysis Of Algorithms"
+            heading="Dynamic Programming"
             component={<CodeComponent />}
             buttonName="Watch Code Samples"
           />

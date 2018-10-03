@@ -56,7 +56,6 @@ function getStepContent(step) {
     case 1:
       return (
         <React.Fragment>
-          <ScrollToTop />
           <Typography component="p" variant="body2">
             Below you will find links to all important youtube playlists , free
             courses so only focus on one playlist or one course until you
@@ -155,6 +154,7 @@ class AndroidDevelopment extends Component {
 
     return (
       <div style={{ marginTop: "100px" }}>
+        <ScrollToTop />
         <Paper className={classes.root} elevation={0}>
           <Typography variant="headline" component="h3" color="primary">
             Android Development
